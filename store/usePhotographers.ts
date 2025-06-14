@@ -1,5 +1,5 @@
-import { create } from "zustand";
-import axios from "axios";
+import { create } from 'zustand'
+import axios from 'axios'
 
 export interface Photographer {
     id: number
@@ -34,10 +34,10 @@ export const usePhotographers = create<PhotographerStore>((set) => ({
     fetchPhotographers: async () => {
         try {
             set({ loading: true })
-            const res = await axios.get('http://localhost:3001/photographers')
+            const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/photographers`)
             set({ data: res.data, loading: false })
         } catch (e) {
-            set({ error: 'Failed to Fetch Photographers', loading: false })        
+            set({ error: 'Failed to fetch photographers', loading: false })
         }
-    }
+    },
 }))
