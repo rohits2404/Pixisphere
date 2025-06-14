@@ -1,10 +1,11 @@
-'use client';
+'use client'
 
 import { useFilterStore } from "@/store/FilterStore"
 import { useState } from "react"
 import { FiFilter, FiX, FiStar, FiDollarSign, FiMapPin, FiRefreshCw } from 'react-icons/fi'
 
 const stylesList = ['Traditional', 'Candid', 'Studio', 'Outdoor']
+
 const cities = ['Bengaluru', 'Delhi', 'Mumbai', 'Hyderabad']
 
 export default function FilterSidebar() {
@@ -19,9 +20,10 @@ export default function FilterSidebar() {
         resetFilters,
     } = useFilterStore()
 
+    // For mobile responsive toggle
     const [isOpen, setIsOpen] = useState(false)
 
-    return(
+    return (
         <>
             {/* Mobile filter toggle button */}
             <button 
@@ -30,6 +32,7 @@ export default function FilterSidebar() {
             >
                 <FiFilter className="h-6 w-6" />
             </button>
+
             {/* Overlay for mobile */}
             {isOpen && (
                 <div 
@@ -37,8 +40,15 @@ export default function FilterSidebar() {
                 onClick={() => setIsOpen(false)}
                 />
             )}
+
             {/* Sidebar */}
-            <aside className={`${isOpen ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'} fixed sm:sticky top-0 left-0 w-72 h-screen sm:h-auto sm:w-64 bg-white p-6 shadow-xl sm:shadow-md z-40 transition-transform duration-300 ease-in-out overflow-y-auto`}>
+            <aside className={`
+            ${isOpen ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'}
+            fixed sm:sticky top-0 left-0 w-72 h-screen sm:h-auto sm:w-64
+            bg-white p-6 shadow-xl sm:shadow-md z-40
+            transition-transform duration-300 ease-in-out
+            overflow-y-auto
+            `}>
                 <div className="flex justify-between items-center mb-6">
                     <h3 className="text-xl font-bold text-gray-800 flex items-center">
                         <FiFilter className="mr-2" /> Filters
