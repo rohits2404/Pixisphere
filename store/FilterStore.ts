@@ -1,10 +1,10 @@
-import { create } from "zustand";
+import { create } from 'zustand'
 
 type SortBy = 'price-asc' | 'rating-desc' | 'recent'
 
 interface FilterState {
     city: string
-    priceRange: [number,number]
+    priceRange: [number, number]
     rating: number
     styles: string[]
     sortBy: SortBy
@@ -15,18 +15,19 @@ interface FilterState {
 
 export const useFilterStore = create<FilterState>((set) => ({
     city: '',
-    priceRange: [0,20000],
+    priceRange: [0, 20000],
     rating: 0,
     styles: [],
     sortBy: 'recent',
     search: '',
     setFilters: (filters) => set((state) => ({ ...state, ...filters })),
-    resetFilters: () => set({
-        city: '',
-        priceRange: [0,20000],
-        rating: 0,
-        styles: [],
-        sortBy: 'recent',
-        search: ''
-    })
-})
+    resetFilters: () =>
+        set({
+            city: '',
+            priceRange: [0, 20000],
+            rating: 0,
+            styles: [],
+            sortBy: 'recent',
+            search: '',
+        }),
+}))
