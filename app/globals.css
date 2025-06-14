@@ -65,27 +65,35 @@
 .filter-group {
   @apply border-b border-gray-100 pb-4;
 }
+
 .filter-label {
   @apply flex items-center text-sm font-medium text-gray-700 mb-2;
 }
+
 .filter-icon {
   @apply mr-2 text-blue-500;
 }
+
 .filter-select {
   @apply w-full p-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm;
 }
+
 .filter-checkbox {
   @apply flex items-center cursor-pointer;
 }
+
 .filter-checkbox-input {
   @apply h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded;
 }
+
 .filter-checkbox-label {
   @apply ml-2 text-sm text-gray-700;
 }
+
 .filter-reset-btn {
   @apply flex-1 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50;
 }
+
 .filter-apply-btn {
   @apply flex-1 px-4 py-2 bg-blue-600 rounded-lg text-sm font-medium text-white hover:bg-blue-700;
 }
