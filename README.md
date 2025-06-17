@@ -8,7 +8,7 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🤸 [Quick Start](#quick-start)
 4. 🕸️ [Snippets (Code to Copy)](#snippets)
-5.     [Explanation (Search,Filter)](#explanation)
+5.  🧠 [Explanation (Search,Filter)](#explanation)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -506,7 +506,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 ```
 </details>
 
-## <a name="explanation">🤖 Explanation</a>
+## <a name="explanation">🧠 Explanation</a>
 
 <details>
 <summary><code>Search Bar</code></summary>
