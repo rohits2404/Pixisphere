@@ -600,7 +600,6 @@ const clearInput = () => {
 * ✅ Lucide React (icons)
 * ✅ Shadcn UI (`Input`, `Button`)
 
-```
 </details>
 
 <details>
