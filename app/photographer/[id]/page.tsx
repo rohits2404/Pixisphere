@@ -19,7 +19,7 @@ export default function PhotographerProfile() {
   const { open } = useModal()
 
   useEffect(() => {
-    fetch(`https://pixisphere-api-17ip.onrender.com/photographers/${id}`)
+    fetch(`https://pixisphere-api-9t20.onrender.com/photographers/${id}`)
       .then((res) => res.json())
       .then((res) => {
         setData(res)
