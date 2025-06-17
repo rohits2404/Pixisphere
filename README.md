@@ -398,8 +398,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 <details>
 <summary><code>db.json</code></summary>
-```typescript
-    {
+```json
+{
     "photographers": [
         {
             "id": 1,
