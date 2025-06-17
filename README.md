@@ -53,7 +53,7 @@ npm install
 
 ```bash
 Step-1 : npm install -g json-server
-Step-2 : Save The <strong>db.json</strong> Provided Below in the Root Directory
+Step-2 : Save The **db.json** Provided Below in the Root Directory
 Step-3 : json-server --watch db.json --port 3001
 
 npm run dev
